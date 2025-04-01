@@ -1,6 +1,6 @@
 package smschina
 
-import "shlianlu"
+import "github.com/cyjaysong/shlianlu"
 
 // GetBalanceReq 产品余额查询
 type GetBalanceReq struct{}

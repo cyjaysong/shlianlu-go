@@ -1,7 +1,7 @@
 package smschina
 
 import (
-	"shlianlu"
+	"github.com/cyjaysong/shlianlu"
 )
 
 // CreateSignReq 创建短信签名

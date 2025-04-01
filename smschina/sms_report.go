@@ -1,6 +1,6 @@
 package smschina
 
-import "shlianlu"
+import "github.com/cyjaysong/shlianlu"
 
 // GetReportListReq 拉取报告列表
 type GetReportListReq struct {

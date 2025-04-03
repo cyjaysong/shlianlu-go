@@ -7,8 +7,8 @@ import (
 // CreateTemplateReq 创建短信模版
 type CreateTemplateReq struct {
 	SignId       int64  `json:"SignId"`       //签名Id
-	Content      string `json:"content"`      //模板内容(无需携带签名)，营销短信模板内容格式：内容 + 退订文案，常见退订文案有：拒收请回复R。
 	TemplateName string `json:"TemplateName"` //短信模板名称
+	Content      string `json:"content"`      //模板内容(无需携带签名)，营销短信模板内容格式：内容 + 退订文案，常见退订文案有：拒收请回复R。
 }
 
 func (req *CreateTemplateReq) Do(cli *shlianlu.Client) (res *CreateTemplateRes, err error) {

@@ -20,10 +20,11 @@ func (req *GetReportListReq) Do(cli *shlianlu.Client) (res *shlianlu.BaseRes[[]G
 type GetReportItem struct {
 	SequenceId string `json:"sequenceId"`
 	Phone      string `json:"phone"`
-	Content    string `json:"content"`
-	Status     string `json:"status"`
-	RespTime   string `json:"respTime"`
-	RespCode   string `json:"respCode"`
+	Content    string `json:"content"`       // 发送短信内容
+	Status     int    `json:"status,string"` // 短信发送状态,0未知,1发送成功,2发送失败
+	RespTime   string `json:"respTime"`      // 短信接受毫秒时间戳,状态未知为空
+	RespCode   string `json:"respCode"`      // 短信状态码,DELIVRD为发送成功,其他为发送失败,对照表见短信状态码
+	Tag        string `json:"tag"`
 }
 
 type ReportNoticeReq struct {
@@ -32,7 +33,7 @@ type ReportNoticeReq struct {
 	TaskId     string `json:"taskId"`
 	SequenceId string `json:"sequenceId"`
 	Phone      string `json:"phone"`
-	Resptime   string `json:"resptime"`
+	RespTime   string `json:"resptime"` // 短信接受毫秒时间戳,状态未知为空
 	RespCode   string `json:"respCode"`
 	CodeDesc   string `json:"codeDesc"`
 	Tag        string `json:"tag"`

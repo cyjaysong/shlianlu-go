@@ -74,7 +74,6 @@ func (c *Client) Pose(path, version string, req, res any) (err error) {
 	// Post
 	jsonBytes, _ = jsonNode.MarshalJSON()
 	httpRes, err := c.reqClient.R().SetBodyJsonBytes(jsonBytes).Post(path)
-	fmt.Println()
 	if err != nil {
 		return err
 	} else if httpRes.StatusCode != 200 {

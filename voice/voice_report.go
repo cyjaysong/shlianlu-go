@@ -1,6 +1,6 @@
 package voice
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // GetReportListReq 拉取报告列表
 type GetReportListReq struct {

@@ -1,6 +1,6 @@
 package smschina
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // GetReplyListReq 拉取回复列表
 type GetReplyListReq struct {

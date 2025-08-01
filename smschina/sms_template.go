@@ -1,7 +1,7 @@
 package smschina
 
 import (
-	"github.com/cyjaysong/shlianlu"
+	"github.com/cyjaysong/shlianlu-go"
 )
 
 // CreateTemplateReq 创建短信模版

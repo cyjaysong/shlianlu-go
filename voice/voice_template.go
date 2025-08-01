@@ -1,6 +1,6 @@
 package voice
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // CreateTemplateReq 创建语音模版
 type CreateTemplateReq struct {

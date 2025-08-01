@@ -1,6 +1,6 @@
 package voice
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // SendTemplateVoiceReq 发送模版语音
 type SendTemplateVoiceReq struct {

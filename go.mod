@@ -1,4 +1,4 @@
-module github.com/cyjaysong/shlianlu
+module github.com/cyjaysong/shlianlu-go
 
 go 1.22.0
 

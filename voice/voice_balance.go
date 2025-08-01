@@ -1,6 +1,6 @@
 package voice
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // GetBalanceReq 产品余额查询
 type GetBalanceReq struct{}

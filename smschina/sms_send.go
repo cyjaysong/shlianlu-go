@@ -1,6 +1,6 @@
 package smschina
 
-import "github.com/cyjaysong/shlianlu"
+import "github.com/cyjaysong/shlianlu-go"
 
 // SendNormalSmsReq 发送普通短信
 type SendNormalSmsReq struct {
